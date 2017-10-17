@@ -24,6 +24,9 @@ public class Etape extends BaseBeanSync implements Serializable {
 
 	/** The lieu arrivee. */
 	private String lieuArrivee;
+	
+	/** The duree. */
+	private int duree;
 
 	/** The voyage. */
 	private Voyage voyage;
@@ -151,5 +154,25 @@ public class Etape extends BaseBeanSync implements Serializable {
 	public void setPointsInterets(PI[] pointsInterets) {
 		this.pointsInterets = pointsInterets;
 	}
+
+	/**
+	 * Gets the duree.
+	 *
+	 * @return the duree
+	 */
+	public int getDuree() {
+		return duree;
+	}
+
+	/**
+	 * Sets the duree.
+	 *
+	 * @param duree the new duree
+	 */
+	public void setDuree(int duree) {
+		this.duree = duree;
+	}
+	
+	
 
 }
